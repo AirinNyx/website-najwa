@@ -1,0 +1,283 @@
+/* Reset dan Pengaturan Dasar */
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #F6F4EB, #91C8E4, #749BC2, #4682A9);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Navigasi */
+nav {
+  background-color: #4682A9;
+  top: 0;
+  z-index: 100;
+}
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-menu > li {
+ position: relative;
+}
+.nav-menu a{
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+.nav-menu a:hover {
+  background-color: #749BC2;
+}
+
+.nav-menu .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #4682A9;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dropdown-menu li a {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 10px;
+}
+
+.vcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.vcard-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vcard-photo img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.info {
+  flex: 2;
+  padding: 40px;
+}
+
+.info h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.info p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* About Section */
+.about {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #F6F4EB, #91C8E4);
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.vcard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.vcard-photo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vcard-photo img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.info {
+  flex: 2;
+  padding: 0;
+}
+
+.info p {
+  text-align: left;
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #91C8E4, #749BC2);
+}
+.portfolio h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+th,
+td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+th {
+  background: #4682A9;
+  color: white;
+}
+/* Opini */
+.opini {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+}
+
+.opini h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.opini div {
+  width: calc(33.333% - 20px);
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.opini div:hover {
+   transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.opini img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.opini h4 {
+  margin: 0;
+  padding: 12px;
+  font-size: 1.1em;
+  background-color: #f5f5f5;
+  color: #2c3e50;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #91C8E4, #749BC2);
+}
+.contact h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.contact-form,
+.contact-map {
+  flex: 1;
+  min-width: 300px;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+.contact-form button {
+  padding: 12px 20px;
+  background: #4682A9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.contact-form button:hover {
+  background: #749BC2;
+}
+.contact-map iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+  background-color: #4682A9;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+}
